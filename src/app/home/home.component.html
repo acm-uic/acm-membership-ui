@@ -1,0 +1,14 @@
+<mat-toolbar>
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <a class="navbar_brand" href="/"><img src="/assets/logo.png" alt="ACM@UIC Logo" class="navbar_logo"></a>
+  <span class="navbar_title">ACM@UIC</span>
+  <span class="spacer"></span>
+  <span>{{themeSelector.value}}</span>
+  <mat-button-toggle-group appearance="legacy" name="themeSelector" #themeSelector="matButtonToggleGroup" aria-label="Theme Selector">
+    <mat-button-toggle value="light"><mat-icon>wb_sunny</mat-icon></mat-button-toggle>
+    <mat-button-toggle value="dark"><mat-icon>wb_cloudy</mat-icon></mat-button-toggle>
+  </mat-button-toggle-group>
+</mat-toolbar>
+
