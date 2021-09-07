@@ -1,7 +1,7 @@
 <mat-horizontal-stepper linear #stepper>
   <mat-step [stepControl]="firstFormGroup">
     <form [formGroup]="firstFormGroup">
-      <ng-template matStepLabel>Fill out your name</ng-template>
+      <ng-template matStepLabel>About You</ng-template>
       <mat-form-field>
         <mat-label>Name</mat-label>
         <input matInput formControlName="firstCtrl" placeholder="Last name, First name" required>
@@ -13,7 +13,7 @@
   </mat-step>
   <mat-step [stepControl]="secondFormGroup">
     <form [formGroup]="secondFormGroup">
-      <ng-template matStepLabel>Fill out your address</ng-template>
+      <ng-template matStepLabel>Interests</ng-template>
       <mat-form-field>
         <mat-label>Address</mat-label>
         <input matInput formControlName="secondCtrl" placeholder="Ex. 1 Main St, New York, NY"
@@ -24,6 +24,22 @@
         <button mat-button matStepperNext>Next</button>
       </div>
     </form>
+  </mat-step>
+  <mat-step>
+    <ng-template matStepLabel>Socials</ng-template>
+    <p>You are now done.</p>
+    <div>
+      <button mat-button matStepperPrevious>Back</button>
+      <button mat-button matStepperNext>Next</button>
+    </div>
+  </mat-step>
+  <mat-step>
+    <ng-template matStepLabel>Dues &amp; Submission</ng-template>
+    <p>Due to the COVID-19 pandemic, local ACM chapter membership dues are waived this year. Just click next. You're almost done.</p>
+    <div>
+      <button mat-button matStepperPrevious>Back</button>
+      <button mat-button matStepperNext>Next</button>
+    </div>
   </mat-step>
   <mat-step>
     <ng-template matStepLabel>Done</ng-template>
