@@ -1,6 +1,6 @@
-# AcmMembershipUi
+# ACM Membership UI
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.8.
+This is an Angular 12 project used to accept and process ACM local memberships.
 
 ## Development server
 
