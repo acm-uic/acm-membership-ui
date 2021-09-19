@@ -12,7 +12,7 @@
       },
       "root": "",
       "sourceRoot": "src",
-      "prefix": "app",
+      "prefix": "acm",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
@@ -100,15 +100,11 @@
           }
         },
         "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
+          "builder": "@angular-eslint/builder:lint",
           "options": {
-            "tsConfig": [
-              "tsconfig.app.json",
-              "tsconfig.spec.json",
-              "e2e/tsconfig.json"
-            ],
-            "exclude": [
-              "**/node_modules/**"
+            "lintFilePatterns": [
+              "src/**/*.ts",
+              "src/**/*.html"
             ]
           }
         },
@@ -129,6 +125,7 @@
   },
   "defaultProject": "acm-membership-ui",
   "cli": {
-    "analytics": "67c54a7c-3f7f-4efb-8366-7b04bf836b80"
+    "analytics": "67c54a7c-3f7f-4efb-8366-7b04bf836b80",
+    "defaultCollection": "@angular-eslint/schematics"
   }
 }
